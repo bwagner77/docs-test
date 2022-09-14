@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Documentation Test
+title: Project
 tagline: Some tags
 #color_scheme: dark
 
