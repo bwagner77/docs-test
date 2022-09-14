@@ -9,35 +9,48 @@ nav_order: 1
 # Introduction
 {: .no_toc }
 
-1. TOC
+TOC
 {:toc}
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
 are a serverless code-first compute service that allow running 
-event-triggered code in a scalable way without managing infrastructure.
+event-triggered code in a scalable way without managing infrastructure. A 
+function is invoked by a ***trigger*** and executes a block of code or 
+or business logic.
 
-## Supported Languages
+## Languages and Supported Runtimes for 4.x
 
-Supported languages: C#, Java, JavaScript, PowerShell, Python
+| Language      | Runtimes for 4.x      |
+| :------------ | :-------------------- |
+| C#            | .NET 6.0              |
+| JavaScript    | Node 14, 16           |
+| Java          | Java 8, 11            |
+| Python        | Python 3.7, 3.8, 3.9  |
 
-## Use Cases
+## Common Use Cases
 
-Note: Designer-first Logic Apps and Power Automate are generally the 
-preferred approaches for developing integration and automation services.
-A comparison of these services can be found 
+Note: Logic Apps (designer-first) and Power Automate should also be considered 
+when developing integration and automation services. A comparison of these 
+services can be found 
 [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json)
 
-- Build a web API
-- Process file uploads
+- Computing backend calculations
+- File processing
 - Respond to database changes
 - Run scheduled tasks
+- Data stream processing
 - Analyze IoT data streams
-- Process data in real time
+- Lightweight web APIs
 
 ## Durable Functions
 
 [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) 
-are an extension of Azure Functions that let you define 
-stateful workflows by writing "orchestrator functions". The state management 
-for non-Durable Functions would need to be built manually using queues or 
-some other form of Azure Storage. 
+are an extension of Azure Functions that let you define stateful workflows by 
+writing "orchestrator functions".
+
+## Triggers and Bindings
+
+Functions are invoked by a ***trigger*** and can have exactly one. In addition 
+to invoking the function, certain triggers can also serve as bindings. Bindings 
+provide a declarative way to connect data to your code. They can be passed 
+in (input) or receive data (output).
