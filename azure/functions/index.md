@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Azure Function
+title: Azure Functions
 parent: Azure
 nav_order: 1
 ---
