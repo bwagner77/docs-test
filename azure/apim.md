@@ -1,9 +1,8 @@
 ---
 layout: default
-title: "Test Conent"
-parent: "GitHub Usage"
-grand_parent: "GitHub App"
-nav_order: 2
+title: "API Management (APIM)"
+parent: "Azure"
+nav_order: 1
 ---
 
 # Working with test conent
