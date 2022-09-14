@@ -32,23 +32,23 @@ Azure Functions in VS Code (as of 9/14/2022).*
 
 1. Open Visual Studio 2022 and create a new Azure Functions project.
 
-![CreateNewProject](assets/images/function-create-new-project.png)
+![CreateNewProject](/assets/images/function-create-new-project.png)
 
 2. Enter a project name, location, and solution name. For the project name, 
 use the following naming convention:
 
-```
-DH.<Integration Name>.AzureFunction
-```
+    ```
+    DH.<Integration Name>.AzureFunction
+    ```
 
-![ConfigureProject](assets/images/function-configure-project.png)
+    ![ConfigureProject](/assets/images/function-configure-project.png)
 
 3. On the Additional Information screen, use the following settings, and 
 select the desired trigger (defaulted to Http trigger).
 
-![AdditionalInformation](assets/images/function-additional-info.png)
+    ![AdditionalInformation](/assets/images/function-additional-info.png)
 
 4. Your solution's folder structure should look similar to the following.
 
-![Structure](assets/images/function-structure.png)
+    ![Structure](/assets/images/function-structure.png)
 

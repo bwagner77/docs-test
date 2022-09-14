@@ -19,7 +19,7 @@ defines the function's trigger, bindings, and other configuration settings.
 For compiled languages like C#, this configuration file is automatically 
 generated from code annotations.
 
-![FunctionApp](assets/images/functionapp.png)
+![FunctionApp](/assets/images/functionapp.png)
 
 ## Service Limits
 
@@ -32,4 +32,4 @@ A complete list of service limits can be found
 | Max query string length   | 4096          |
 | Max request URL length    | 8192          |
 
-Note: Cold start is a non-issue when running within an ASE/dedicated host.
+*Note: Cold start is a non-issue when running within an ASE/dedicated host.*

@@ -9,14 +9,14 @@ nav_order: 1
 # Introduction
 {: .no_toc }
 
-- TOC
-{:toc}
-
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
 are a serverless code-first compute service that allow running 
 event-triggered code in a scalable way without managing infrastructure. A 
 function is invoked by a *trigger* and executes a block of code or 
 or business logic.
+
+- TOC
+{:toc}
 
 ## Languages and Supported Runtimes for 4.x
 
