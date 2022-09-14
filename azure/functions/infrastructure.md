@@ -9,18 +9,29 @@ nav_order: 2
 # Infrastructure
 {: .no_toc }
 
-[TODO:Placeholder] Function Apps run within an App Service Enviornment (ASE). An 
-ASE is an App Service feature that provides a fully isolated and dedicated 
-enviornment for securely running App Service apps at high scale.
+## Organization
 
-Note: Cold start is a non-issue when running within an ASE/decidated host.
+Function Apps run within an App Service Enviornment (ASE). An ASE is an 
+App Service feature that provides a fully isolated and dedicated enviornment 
+for securely running App Service apps at high scale.
+
+A Function App provides an execution context in Azure in which the functions 
+run.
+
+Functions are the primary concept in Azure Functions. A function contains two
+important pieces - code and the function.json file. The function.json file
+defines the function's trigger, bindings, and other configuration settings.
+For compiled languages like C#, this configuration file is automatically 
+generated from code annotations.
 
 ![FunctionApp](assets/images/functionapp.png)
 
 ## Service Limits
 
 A more complete list of service limits can be found 
-[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) 
+[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale)
+
+Note: Cold start is a non-issue when running within an ASE/decidated host.
 
 | Default timeout duration  | 30 minutes    |
 | Max instance count        | 100           |
