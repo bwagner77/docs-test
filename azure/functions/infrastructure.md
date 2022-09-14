@@ -15,7 +15,7 @@ enviornment for securely running App Service apps at high scale.
 
 Note: Cold start is a non-issue when running within an ASE/decidated host.
 
-![FunctionApp](../../assets/images/functionapp.png)
+![FunctionApp](assets/images/functionapp.png)
 
 ## Service Limits
 
