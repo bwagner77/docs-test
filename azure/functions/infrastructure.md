@@ -19,7 +19,7 @@ defines the function's trigger, bindings, and other configuration settings.
 For compiled languages like C#, this configuration file is automatically 
 generated from code annotations.
 
-![FunctionApp](/assets/images/functionapp.png)
+![FunctionApp](/docs-test/assets/images/functionapp.png)
 
 ## Service Limits
 

@@ -32,7 +32,7 @@ or business logic.
 **Note**: Logic Apps (designer-first) and Power Automate are typically 
 preferred approaches when developing integration and automation services. 
 A comparison of these services can be found 
-[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json)
+[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
 
 - Computing backend calculations
 - File processing
