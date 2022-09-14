@@ -1,9 +1,13 @@
 ---
 layout: default
-title: Azure Functions
+title: Azure Function
 parent: Azure
-nav_order: 3
+nav_order: 1
 ---
 
 # Azure Functions
 {: .no_toc }
+
+1. TOC
+{:toc}
+
