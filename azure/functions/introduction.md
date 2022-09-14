@@ -9,7 +9,7 @@ nav_order: 1
 # Introduction
 {: .no_toc }
 
-TOC
+- TOC
 {:toc}
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)

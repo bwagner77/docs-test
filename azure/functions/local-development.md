@@ -9,26 +9,26 @@ nav_order: 3
 # Local Development
 {: .no_toc }
 
-1. TOC
+- TOC
 {:toc}
 
 ## Environment
 
-- Visual Studio or VS Code*
+- Visual Studio or VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
 - Thunder Client VS Code Extension (optional REST client)
 
 *Some developers have reported issues when attempting to run 
-Azure Functions in VS Code (as of 9/14/2022).
+Azure Functions in VS Code (as of 9/14/2022).*
 
 ## Microsoft Quickstart Guides
 
-[Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
-[Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
-[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
+[Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
+[Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
+[Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
 
-## Guide: How to create a new C# Function App in Visual Studio
+## How to create a new C# Function App in Visual Studio
 
 1. Open Visual Studio 2022 and create a new Azure Functions project.
 
