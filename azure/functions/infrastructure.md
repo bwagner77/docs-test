@@ -9,14 +9,13 @@ nav_order: 2
 # Infrastructure
 {: .no_toc }
 
-1. TOC
-{:toc}
-
-[placeholder] Function Apps run within an App Service Enviornment (ASE). An 
+[TODO:Placeholder] Function Apps run within an App Service Enviornment (ASE). An 
 ASE is an App Service feature that provides a fully isolated and dedicated 
 enviornment for securely running App Service apps at high scale.
 
-Cold start is a non-issue when running within an ASE/decidated host.
+Note: Cold start is a non-issue when running within an ASE/decidated host.
+
+![Function App](/assets/images/functionapp.png)
 
 ## Service Limits
 
