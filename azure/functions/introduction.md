@@ -6,7 +6,7 @@ grand_parent: Azure
 nav_order: 1
 ---
 
-# Overview
+# Introduction
 {: .no_toc }
 
 1. TOC
@@ -22,9 +22,9 @@ Supported languages: C#, Java, JavaScript, PowerShell, Python
 
 ## Use Cases
 
-Note: Designer-first (Logic Apps) and Power Automate are generally the 
+Note: Designer-first Logic Apps and Power Automate are generally the 
 preferred approaches for developing integration and automation services.
-More infromation can be found 
+A comparison of these services can be found 
 [here] (https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json)
 
 - Build a web API
