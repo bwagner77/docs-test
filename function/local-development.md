@@ -13,13 +13,16 @@ nav_order: 4
 
 ## Environment
 
-- Visual Studio or VS Code
+Visual Studio uses Azure Functions Core Tools to run Function projects 
+on your local computer.
+
+*Note: Some developers have reported issues when trying to run Functions 
+in VS Code (as of 9/14/2022).*
+
+- Visual Studio or *VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
 - Thunder Client VS Code Extension (optional REST client)
-
-*Note: Some developers have reported issues when attempting to run 
-Azure Functions in VS Code (as of 9/14/2022).*
 
 ## Developer Guides
 

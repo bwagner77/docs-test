@@ -19,7 +19,7 @@ business logic.
 
 ## Common Use Cases
 
-**Note**: Logic Apps (designer-first) and Power Automate are typically 
+Logic Apps (designer-first) and Power Automate are generally the 
 preferred approaches when developing integration and automation services. 
 A comparison of these services can be found in the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
