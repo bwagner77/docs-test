@@ -9,7 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 **Function Apps** run within an App Service Enviornment (ASE). They provide an 
-execution context for running the functions. They are managed by the 
+execution context for running the functions and are managed by the 
 DevOps infrastructure team.
 
 **Functions** are the primary concept in Azure Functions. A function contains two

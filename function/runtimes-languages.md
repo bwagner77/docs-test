@@ -13,10 +13,9 @@ nav_order: 3
 
 ## Runtimes
 
-The following table lists recent Azure Functions runtime host versions.
-
-The runtime version used by published apps in Azure is dictated by 
-the FUNCTIONS_EXTENSION_VERSION 
+The following table lists recent Azure Functions runtime host versions. The 
+runtime version used by published apps in Azure is dictated by the 
+FUNCTIONS_EXTENSION_VERSION 
 [app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
 | Version   | App Setting Value   | Support Level | Description | 

@@ -12,7 +12,7 @@ nav_order: 1
 are a serverless code-first compute service that allow running 
 event-triggered code in a scalable way without managing infrastructure. A 
 function is invoked by a *trigger* and executes a block of code or 
-or business logic.
+business logic.
 
 - TOC
 {:toc}
