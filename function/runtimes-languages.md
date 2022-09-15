@@ -17,7 +17,7 @@ The following table lists recent Azure Functions runtime host versions.
 
 The runtime version used by published apps in Azure is dictated by 
 the FUNCTIONS_EXTENSION_VERSION 
-[app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
+[app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime){:target="_blank"}.
 
 | Version   | App Setting Value   | Support Level | Description | 
 | --------- | ------------------- | ------------- | ----------- |
@@ -58,9 +58,9 @@ a specific set of binding extensions that are verified to work together.
 Starting with version 4.x, the Functions runtime enforces a minimum 
 extension version for all trigger and binding extensions. Additional details 
 can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions)
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions){:target="_blank"}
 
-The extension bundle reference can be found in the host.json file.
+The extension bundle reference can be found in the **host.json** file.
 
 ``` json 
 {

@@ -23,9 +23,9 @@ Azure Functions in VS Code (as of 9/14/2022).*
 
 ## Microsoft Quickstart Guides
 
-[Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
-[Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
-[Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
+[Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process){:target="_blank"}
+[Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process){:target="_blank"}
+[Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node){:target="_blank"}
 
 ## How to create a new C# Function App in Visual Studio
 
@@ -36,7 +36,7 @@ Azure Functions template.
 
 2. Enter the project name using the following naming convention.
 
-    **DH.{Component/Integration}.AzureFunction**
+    ==DH.{Component/Integration}.AzureFunction==
 
     ![ConfigureProject](../assets/images/function-configure-project.png)
 
@@ -49,11 +49,11 @@ select the desired trigger (defaulted to Http trigger).
 
     ![Structure](../assets/images/function-structure.png)
 
-    [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json)
+    [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json){:target="_blank"}
     : Contains the global configuration options that affect all functions for 
     a function app.
 
-    [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
+    [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings){:target="_blank"}
     : Stores app settings, connection strings, and settings used by local 
     development tools.
     
