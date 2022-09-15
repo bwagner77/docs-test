@@ -61,7 +61,7 @@ in VS Code (as of 9/14/2022).*
     : Stores the app settings and connection strings used for local 
     development.
 
-5. Open the function file **BusinessFunction.cs**. The **FunctionName** attribute 
+5. Open the function file (BusinessFunction.cs). The **FunctionName** attribute 
 for Run indicates the method is the entry point for the function.
 
     ``` csharp
