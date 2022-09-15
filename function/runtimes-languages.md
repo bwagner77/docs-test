@@ -51,8 +51,9 @@ for a function app is stored in the FUNCTIONS_WORKER_RUNTIME app setting.
 ## Extension Bundles
 
 Extension bundles are a way to add a pre-defined compatible set of binding 
-extensions to a non-.NET function app. Each extension bundle version contains 
-a specific set of binding extensions that are verified to work together.
+extensions to a non-.NET function app. Each version of an extension bundle 
+contains a specific set of binding extensions that are verified to work 
+together.
 
 Starting with version 4.x, the Functions runtime enforces a minimum 
 extension version for all trigger and binding extensions. Additional details 
