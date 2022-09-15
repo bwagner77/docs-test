@@ -9,17 +9,15 @@ nav_order: 1
 # Function Code Examples - Adding Dependency Injection
 {: .no_toc }
 
-*Note: This custom dependency injection model does not apply to .NET 
-isolated functions. The .NET isolated process model relies on regular 
-ASP.NET Core dependency injection patterns.*
-
 See the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection)
 for further information on function dependency injection.
 
-## Prerequisites
+*Note: This custom dependency injection model does not apply to .NET 
+isolated functions. The .NET isolated process model relies on regular 
+ASP.NET Core dependency injection patterns.*
 
-The following NuGet packages are required.
+## Prerequisites
 
 - Microsoft.Azure.Functions.Extensions
 - Microsoft.NET.Sdk.Functions
@@ -28,7 +26,8 @@ The following NuGet packages are required.
 ## Register services
 
 Add a new class named **Startup.cs** to your functions project. Create a 
-method to configure and add components to an IFunctionsHostBuilder instance.  
+method for configuring and adding components to an IFunctionsHostBuilder 
+instance.  
 
 Add **FunctionsStartup** assembly attribute to specify the type name 
 used during startup.
