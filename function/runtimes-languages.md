@@ -37,7 +37,7 @@ file (.csproj).
 
 ## Languages
 
-All functions in a function app must share the same langauge. The langauge 
+All functions in a function app must share the same language. The language 
 for a function app is stored in the FUNCTIONS_WORKER_RUNTIME app setting.
 
 | Language      | 3.x                       | 4.x | 

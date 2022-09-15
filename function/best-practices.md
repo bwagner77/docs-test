@@ -8,6 +8,9 @@ nav_order: 7
 # Functions Best Practices
 {: .no_toc }
 
+- TOC
+{:toc}
+
 ### Performance and scaling
 Organize function apps and functions for performance, scaling, 
 and security. In an ASE multiple function apps can share the same 

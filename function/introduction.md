@@ -8,14 +8,16 @@ nav_order: 1
 # Functions Introduction
 {: .no_toc }
 
+- TOC
+{:toc}
+
+## What are Azure Functions?
+
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
 are a serverless code-first compute service that allow running 
 event-triggered code in a scalable way without managing infrastructure. A 
 function is invoked by a *trigger* and executes a block of code or 
 business logic.
-
-- TOC
-{:toc}
 
 ## Common use cases
 

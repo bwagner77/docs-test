@@ -13,10 +13,7 @@ nav_order: 4
 
 ## Environment
 
-Develop functions locally in Visual Studio with Azure Functions Core Tools. 
-
-*Note: Some developers have reported issues when trying to run Functions 
-in VS Code (as of 9/14/2022).*
+Function are developed locally in Visual Studio using Azure Functions Core Tools.
 
 - Microsoft Windows
 - Visual Studio or VS Code
@@ -24,12 +21,8 @@ in VS Code (as of 9/14/2022).*
 - Azure Functions Core Tools
 - Thunder Client, VS Code Extension REST client (optional)
 
-## Developer guides
-
-[Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
-[Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
-[Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
-[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
+*Note: Some developers have reported issues when trying to run Functions 
+in VS Code (as of 9/14/2022).*
 
 ## How to create a new C# Function App in Visual Studio
 
@@ -100,3 +93,10 @@ VS Code extension.
     ![FunctionRunCurl](../assets/images/function-run-curl.png)
 
     ![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
+
+## Additional developer guides
+
+[Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
+[Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
+[Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
+[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)

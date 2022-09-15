@@ -6,7 +6,7 @@ grand_parent: Functions
 nav_order: 1
 ---
 
-# Function Code Examples - Adding Dependency Injection
+# Adding Dependency Injection
 {: .no_toc }
 
 See the 
