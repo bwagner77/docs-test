@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Functions Introduction
+title: Introduction
 parent: Functions
 nav_order: 1
 ---
 
-# Introduction
+# Functions Introduction
 {: .no_toc }
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
@@ -22,7 +22,7 @@ or business logic.
 **Note**: Logic Apps (designer-first) and Power Automate are typically 
 preferred approaches when developing integration and automation services. 
 A comparison of these services can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json){:target="_blank"}.
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
 
 - Computing backend calculations
 - File processing
@@ -34,7 +34,7 @@ A comparison of these services can be found in the
 
 ## Durable Functions
 
-[Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp){:target="_blank"} 
+[Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp)
 are an extension of Azure Functions that let you define stateful workflows by 
 writing "orchestrator functions".
 
@@ -52,4 +52,4 @@ Except for HTTP and timer triggers, all bindings must be explicitly added to the
 function app project.
 
 Additional information for triggers and bindings can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp){:target="_blank"}.
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).

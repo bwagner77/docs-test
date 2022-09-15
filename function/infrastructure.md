@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Functions Infrastructure
+title: Infrastructure
 parent: Functions
 nav_order: 2
 ---
 
-# Infrastructure
+# Functions Infrastructure
 {: .no_toc }
 
 **Function Apps** run within an App Service Enviornment (ASE). They provide an 

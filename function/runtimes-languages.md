@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Functions Runtimes and Languages
+title: Runtimes and Languages
 parent: Functions
 nav_order: 3
 ---
 
-# Runtimes and Languages
+# Functions Runtimes and Languages
 {: .no_toc }
 
 - TOC
@@ -17,12 +17,12 @@ The following table lists recent Azure Functions runtime host versions.
 
 The runtime version used by published apps in Azure is dictated by 
 the FUNCTIONS_EXTENSION_VERSION 
-[app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime){:target="_blank"}.
+[app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
 | Version   | App Setting Value   | Support Level | Description | 
 | --------- | ------------------- | ------------- | ----------- |
 | 4.x       | ~4                  | GA            | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
-| 3.x       | ~3                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0. | 
+| 3.x       | ~3                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0 | 
 
 The TargetFramework and AzureFunctionsVersion are found in the C# project 
 file (.csproj).
@@ -58,7 +58,7 @@ a specific set of binding extensions that are verified to work together.
 Starting with version 4.x, the Functions runtime enforces a minimum 
 extension version for all trigger and binding extensions. Additional details 
 can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions){:target="_blank"}
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions)
 
 The extension bundle reference can be found in the **host.json** file.
 
