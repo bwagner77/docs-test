@@ -13,13 +13,12 @@ nav_order: 4
 
 ## Environment
 
-Visual Studio uses Azure Functions Core Tools to run Function projects 
-on your local computer.
+Develop functions locally in Visual Studio with Azure Functions Core Tools. 
 
 *Note: Some developers have reported issues when trying to run Functions 
 in VS Code (as of 9/14/2022).*
 
-- Visual Studio or *VS Code
+- Visual Studio or VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
 - Thunder Client VS Code Extension (optional REST client)
@@ -34,17 +33,17 @@ in VS Code (as of 9/14/2022).*
 ## How to create a new C# Function App in Visual Studio
 
 1. Open Visual Studio 2022 and create a new project using the 
-Azure Functions template.
+**Azure Functions** template.
 
     ![CreateNewProject](../assets/images/function-create-new-project.png)
 
-2. Enter the project name using the following naming convention.
+2. Enter a **Project name** using the following naming convention.
 
     DH.{Component/Integration}.AzureFunction
 
     ![ConfigureProject](../assets/images/function-configure-project.png)
 
-3. Select the desired trigger on On the Additional Information screen 
+3. On the Additional Information screen selected the desired trigger 
 (defaulted to Http trigger).
 
     ![AdditionalInformation](../assets/images/function-additional-info.png)
@@ -54,10 +53,37 @@ Azure Functions template.
     ![Structure](../assets/images/function-structure.png)
 
     [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json)
-    : Contains the global configuration options that affect all functions for 
-    a function app.
+    : Lets you configure the Functions host. These settings apply both when 
+    running locally and in Azure.
 
     [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
-    : Stores the app settings, connection strings, and settings used for local 
+    : Stores the app settings and connection strings used for local 
     development.
-    
+
+5. Open the **BusinessFunction.cs** file. The **FunctionName** attribute 
+indicates the method is the entry point for the function.
+
+    ``` csharp
+    public static class BusinessFunction
+    {
+        [FunctionName("BusinessFunction")]
+        public static async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            ILogger log)
+        {
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            string name = req.Query["name"];
+
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            name = name ?? data?.name;
+
+            string responseMessage = string.IsNullOrEmpty(name)
+                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+            return new OkObjectResult(responseMessage);
+        }
+    }
+    ```
