@@ -22,8 +22,8 @@ generated from code annotations.
 
 ## Service Limits
 
-A complete list of service limits can be found 
-[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale)
+A full list of service limits can be found in the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale)
 
 | Default timeout duration  | 30 minutes    |
 | Max instance count        | 100           |

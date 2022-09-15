@@ -17,21 +17,12 @@ or business logic.
 - TOC
 {:toc}
 
-## Languages and Supported Runtimes for 4.x
-
-| Language      | Runtimes for 4.x      |
-| :------------ | :-------------------- |
-| C#            | .NET 6.0              |
-| JavaScript    | Node 14, 16           |
-| Java          | Java 8, 11            |
-| Python        | Python 3.7, 3.8, 3.9  |
-
 ## Common Use Cases
 
 **Note**: Logic Apps (designer-first) and Power Automate are typically 
 preferred approaches when developing integration and automation services. 
-A comparison of these services can be found 
-[here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
+A comparison of these services can be found in the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
 
 - Computing backend calculations
 - File processing
@@ -49,7 +40,16 @@ writing "orchestrator functions".
 
 ## Triggers and Bindings
 
-Functions are invoked by a *trigger* and can have exactly one. In addition 
-to invoking the function, certain triggers can also serve as bindings. Bindings 
-provide a declarative way to connect data to your code. They can be passed 
-in (input) or receive data (output).
+Triggers cause a function to run. A trigger defines how a function is invoked
+and a function must have exactly one trigger. Triggers have associated data,
+which is often provided as the payload of the function.
+
+Binding to a function is a way of declaratively connecting another resource 
+to the function; bindings may be connected as input bindings, output bindings, 
+or both. Data from bindings is provided to the function as parameters.
+
+Except for HTTP and timer triggers, all bindings must be explicitly added to the 
+function app project.
+
+Additional information for triggers and bindings can be found in the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).
