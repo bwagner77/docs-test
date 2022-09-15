@@ -18,7 +18,7 @@ nav_order: 3
 - Azure Functions Core Tools
 - Thunder Client VS Code Extension (optional REST client)
 
-*Some developers have reported issues when attempting to run 
+*Note: Some developers have reported issues when attempting to run 
 Azure Functions in VS Code (as of 9/14/2022).*
 
 ## Microsoft Quickstart Guides

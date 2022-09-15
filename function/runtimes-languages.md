@@ -19,12 +19,12 @@ The runtime version used by published apps in Azure is dictated by
 the FUNCTIONS_EXTENSION_VERSION 
 [app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
-| Version   | FUNCTIONS_EXTENSION_VERSION Value   | Support Level | Description | 
-| --------- | ----------------------------------- | ------------- | ----------- |
-| 4.x       | ~4                                  | GA            | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
-| 3.x       | ~3                                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0. | 
+| Version   | App Setting Value   | Support Level | Description | 
+| --------- | ------------------- | ------------- | ----------- |
+| 4.x       | ~4                  | GA            | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
+| 3.x       | ~3                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0. | 
 
-The TargetFramework and AzureFunctionsVersion is found in the C# project 
+The TargetFramework and AzureFunctionsVersion are found in the C# project 
 file (.csproj).
 
 *See the Languages table below for compatibility.*
