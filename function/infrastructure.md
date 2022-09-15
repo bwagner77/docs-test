@@ -18,7 +18,7 @@ single compute instance.
 
 ![FunctionApp](../assets/images/functionapp.png)
 
-## Service Limits
+## Service limits
 
 A full list of service limits can be found in the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale){:target="_blank"}.

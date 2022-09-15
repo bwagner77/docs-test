@@ -2,7 +2,7 @@
 layout: default
 title: Dependency Injection
 parent: Code Examples
-grand-parent: Functions
+grand_parent: Functions
 nav_order: 1
 ---
 
