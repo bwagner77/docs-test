@@ -23,7 +23,7 @@ FUNCTIONS_EXTENSION_VERSION
 | 4.x       | ~4                  | GA            | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
 | 3.x       | ~3                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0 | 
 
-The TargetFramework and AzureFunctionsVersion are found in the C# project 
+TargetFramework and AzureFunctionsVersion are found in the C# project 
 file (.csproj).
 
 *See the Languages table below for compatibility.*
