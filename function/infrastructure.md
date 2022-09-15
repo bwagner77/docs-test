@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Infrastructure
-parent: Azure Functions
-grand_parent: Azure
+title: Functions Infrastructure
+parent: Functions
 nav_order: 2
 ---
 
@@ -19,7 +18,7 @@ defines the function's trigger, bindings, and other configuration settings.
 For compiled languages like C#, this configuration file is automatically 
 generated from code annotations.
 
-![FunctionApp](/docs-test/assets/images/functionapp.png)
+![FunctionApp](../assets/images/functionapp.png)
 
 ## Service Limits
 

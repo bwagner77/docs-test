@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Introduction
-parent: Azure Functions
-grand_parent: Azure
+title: Functions Introduction
+parent: Functions
 nav_order: 1
 ---
 
