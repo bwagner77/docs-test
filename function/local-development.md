@@ -94,7 +94,7 @@ VS Code extension.
 
     ![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
 
-## Additional developer guides
+## Developer guides
 
 [Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
 [Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
