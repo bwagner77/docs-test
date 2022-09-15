@@ -44,14 +44,24 @@ writing "orchestrator functions".
 
 Triggers cause a function to run. A trigger defines how a function is invoked
 and a function must have exactly one trigger. Triggers have associated data,
-which is often provided as the payload of the function.
+which is often provided as the payload of the function.  The following 
+are some common triggers:
 
-Binding to a function is a way of declaratively connecting another resource 
-to the function; bindings may be connected as input bindings, output bindings, 
-or both. Data from bindings is provided to the function as parameters.
+| Trigger               | Description   | 
+| --------------------- | ------------- | 
+| Timer trigger         | Called on a predefined schedule. |
+| Blob trigger          | Fired when a new or updated blob is detected. |
+| Event Hub trigger     | Fired when events are delivered to an Azure Event Hub. |
+| HTTP trigger          | Fired from a HTTP request | 
+| Queue trigger         | Fired when any new messages arrive in an Azure Storage Queue. | 
+| Service Bus trigger   | Fired when a new message comes from a service bus queue or topic | 
 
-Except for HTTP and timer triggers, all bindings must be explicitly added to the 
-function app project.
+A binding is a connection to data within a function. Bindings may be connected 
+as input bindings, output bindings, or both. Data from bindings is provided 
+to the function as parameters.
+
+All bindings, except for HTTP and timer triggers, must be explicitly added to 
+the function app project.
 
 Additional information for triggers and bindings can be found in the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).
