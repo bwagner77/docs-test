@@ -48,7 +48,7 @@ performance.
 Asynchronous programming is a recommended best practice, especially when 
 blocking I/O operations are involved.
 
-### Build in logic to protect data integrity and system health
+### Add logic to protect data integrity
 - Verify the existence of data before trying to execute a delete
 - Check if data already exists before trying to execute a create action
 - Reconciling logic that creates eventual consistency in data
