@@ -18,6 +18,7 @@ Develop functions locally in Visual Studio with Azure Functions Core Tools.
 *Note: Some developers have reported issues when trying to run Functions 
 in VS Code (as of 9/14/2022).*
 
+- Microsoft Windows
 - Visual Studio or VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
@@ -60,8 +61,8 @@ in VS Code (as of 9/14/2022).*
     : Stores the app settings and connection strings used for local 
     development.
 
-5. Open the **BusinessFunction.cs** file. The **FunctionName** attribute 
-indicates the method is the entry point for the function.
+5. Open the function file **BusinessFunction.cs**. The **FunctionName** attribute 
+for Run indicates the method is the entry point for the function.
 
     ``` csharp
     public static class BusinessFunction
@@ -87,3 +88,15 @@ indicates the method is the entry point for the function.
         }
     }
     ```
+
+6. Press F5 to start the function in debug mode. You might be prompted to 
+enable Windows firewall exception.
+
+![FunctionDebugConsole](../assets/images/function-debug-console.png)
+
+7. Test executing the function using cURL or with the Thunder Client 
+VS Code extension.
+
+![FunctionRunCurl](../assets/images/function-run-curl.png)
+
+![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
