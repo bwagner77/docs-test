@@ -13,6 +13,10 @@ nav_order: 1
 isolated functions. The .NET isolated process model relies on regular 
 ASP.NET Core dependency injection patterns.*
 
+See the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection)
+for further information on function dependency injection.
+
 ## Prerequisites
 
 The following NuGet packages are required.
