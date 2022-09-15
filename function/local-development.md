@@ -92,11 +92,11 @@ for Run indicates the method is the entry point for the function.
 6. Press F5 to start the function in debug mode. You might be prompted to 
 enable Windows firewall exception.
 
-![FunctionDebugConsole](../assets/images/function-debug-console.png)
+    ![FunctionDebugConsole](../assets/images/function-debug-console.png)
 
-7. Test executing the function using cURL or with the Thunder Client 
+7. Test executing the function using cURL or with Thunder Client 
 VS Code extension.
 
-![FunctionRunCurl](../assets/images/function-run-curl.png)
+    ![FunctionRunCurl](../assets/images/function-run-curl.png)
 
-![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
+    ![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
