@@ -12,11 +12,9 @@ nav_order: 2
 execution context for running the functions and are managed by the 
 DevOps infrastructure team.
 
-**Functions** are the primary concept in Azure Functions. A function contains two
-important pieces - code and the function.json file. The function.json file
-defines the function's trigger, bindings, and other configuration settings.
-For compiled languages like C#, this configuration file is automatically 
-generated from code annotations.
+**Functions** are the primary concept in Azure Functions. The hosting model 
+for functions allow multiple function invocations to run concurrently on a 
+single compute instance.
 
 ![FunctionApp](../assets/images/functionapp.png)
 

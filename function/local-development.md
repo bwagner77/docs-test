@@ -21,11 +21,12 @@ nav_order: 3
 *Note: Some developers have reported issues when attempting to run 
 Azure Functions in VS Code (as of 9/14/2022).*
 
-## Microsoft Quickstart Guides
+## Developer Guides
 
-[Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
-[Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
-[Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
+[Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
+[Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
+[Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
+[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
 
 ## How to create a new C# Function App in Visual Studio
 
@@ -36,12 +37,12 @@ Azure Functions template.
 
 2. Enter the project name using the following naming convention.
 
-    ==DH.{Component/Integration}.AzureFunction==
+    DH.{Component/Integration}.AzureFunction
 
     ![ConfigureProject](../assets/images/function-configure-project.png)
 
-3. On the Additional Information screen, use the following settings, and 
-select the desired trigger (defaulted to Http trigger).
+3. Select the desired trigger on On the Additional Information screen 
+(defaulted to Http trigger).
 
     ![AdditionalInformation](../assets/images/function-additional-info.png)
 
@@ -54,6 +55,6 @@ select the desired trigger (defaulted to Http trigger).
     a function app.
 
     [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
-    : Stores app settings, connection strings, and settings used by local 
-    development tools.
+    : Stores the app settings, connection strings, and settings used for local 
+    development.
     
