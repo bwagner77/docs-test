@@ -13,24 +13,21 @@ nav_order: 3
 
 ## Runtimes
 
-The following table lists recent versions of Azure Functions runtime host.
+The following table lists recent Azure Functions runtime host versions.
 
-| Version   | Support Level     | Description | 
-| --------- | ----------------- | ----------- | 
-| 4.x       | GA                | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
-| 3.x       | GA                | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0. | 
-
-The version of the runtime used by published apps in Azure is dictated by 
+The runtime version used by published apps in Azure is dictated by 
 the FUNCTIONS_EXTENSION_VERSION 
 [app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
-| Value | Runtime Target | 
-| ----- | -------------- |
-| ~4    | 4.x | 
-| ~3    | 3.x | 
+| Version   | FUNCTIONS_EXTENSION_VERSION Value   | Support Level | Description | 
+| --------- | ----------------------------------- | ------------- | ----------- |
+| 4.x       | ~4                                  | GA            | Recommended runtime version for functions in all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
+| 3.x       | ~3                                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0. | 
 
-For C#, the TargetFramework and AzureFunctionsVersion is found in the project 
-file (.csproj). See the Languages table below for compatibility.
+The TargetFramework and AzureFunctionsVersion is found in the C# project 
+file (.csproj).
+
+*See the Languages table below for compatibility.*
 
 ``` xml
 <PropertyGroup>
@@ -42,7 +39,7 @@ file (.csproj). See the Languages table below for compatibility.
 ## Languages
 
 All functions in a function app must share the same langauge. The langauge 
-for the function app is stored in the FUNCTIONS_WORKER_RUNTIME setting.
+for a function app is stored in the FUNCTIONS_WORKER_RUNTIME app setting.
 
 | Language      | 3.x                       | 4.x | 
 | ------------- | ------------------------- | ---------------------------- |
