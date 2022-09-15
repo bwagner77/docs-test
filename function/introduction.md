@@ -17,7 +17,7 @@ business logic.
 - TOC
 {:toc}
 
-## Common Use Cases
+## Common use cases
 
 Logic Apps (designer-first) and Power Automate are generally the 
 preferred approaches when developing integration and automation services. 
@@ -38,7 +38,7 @@ A comparison of these services can be found in the
 are an extension of Azure Functions that let you define stateful workflows by 
 writing "orchestrator functions".
 
-## Triggers and Bindings
+## Triggers and bindings
 
 Triggers cause a function to run. A trigger defines how a function is invoked
 and a function must have exactly one trigger. Triggers have associated data,

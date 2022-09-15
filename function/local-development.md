@@ -22,9 +22,9 @@ in VS Code (as of 9/14/2022).*
 - Visual Studio or VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
-- Thunder Client VS Code Extension (optional REST client)
+- Thunder Client, VS Code Extension REST client (optional)
 
-## Developer Guides
+## Developer guides
 
 [Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
 [Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)

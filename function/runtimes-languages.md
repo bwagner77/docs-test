@@ -48,7 +48,7 @@ for a function app is stored in the FUNCTIONS_WORKER_RUNTIME app setting.
 | Java          | Java 8, 11                | Java 8, 11 | 
 | Python        | 3.6, 3.7, 3.8, 3.9        | 3.7, 3.8, 3.9 | 
 
-## Extension Bundles
+## Extension bundles
 
 Extension bundles are a way to add a pre-defined compatible set of binding 
 extensions to a non-.NET function app. Each version of an extension bundle 
@@ -71,13 +71,13 @@ The extension bundle reference can be found in the **host.json** file.
     }
 }
 ```
-## .NET Isolated Process
+## .NET isolated process
 
 Previously functions only supported a tightly integrated mode for .NET 
 functions by running as a *class library* in the same process as the host. 
 This mode has deep integration between the host process and functions. 
 
-With the .NET isolated process, functions run *out-of-process*. This 
+With the .NET isolated process functions run *out-of-process*. This 
 decouples the code from the runtime, thus eliminating assembly version 
 conflicts between the app and the host process. A .NET isolated function 
 project is basically a .NET console app project that targets a 
