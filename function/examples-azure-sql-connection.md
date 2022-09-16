@@ -13,10 +13,6 @@ This tutorial describes how to connect to an Azure SQL database from
 an Azure Function using **SQL authentication** (username and password). 
 Skip to step 5 if the Login and User already exist.
 
-See the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection)
-for further information on function dependency injection.
-
 ## Prerequisites
 
 - Visual Studio or VS Code
