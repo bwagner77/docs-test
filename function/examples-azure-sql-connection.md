@@ -11,7 +11,7 @@ nav_order: 2
 
 This tutorial describes how to connect to an Azure SQL database from 
 an Azure Function using **SQL authentication** (username and password). 
-If the Login and User already exist, you can skip to Step 5.
+Skip to step 5 if the Login and User already exist.
 
 See the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection)
@@ -76,12 +76,8 @@ following app setting
 
 ```
 @Microsoft.KeyVault(SecretUri=https://myvault.vault.azure.net/secrets/mysecret/)
-```
-
-```
 @Microsoft.KeyVault(VaultName=myvault;SecretName=mysecret)
 ```
-
 ``` csharp
 using System;
 using System.Collections.Generic;
