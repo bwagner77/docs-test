@@ -9,6 +9,9 @@ nav_order: 2
 # Connect to Azure SQL (using SQL authentication)
 {: .no_toc }
 
+- TOC
+{:toc}
+
 This tutorial describes how to connect to an Azure SQL database from 
 an Azure Function using **SQL authentication** (username and password). 
 Skip to step 5 if the Login and User already exist.
