@@ -6,7 +6,7 @@ grand_parent: Functions
 nav_order: 2
 ---
 
-# Connect to an Azure SQL database using SQL authentication
+# Connect to Azure SQL (using SQL authentication)
 {: .no_toc }
 
 This tutorial describes how to connect to an Azure SQL database from 
@@ -31,14 +31,14 @@ blade under Settings > Connection Strings
 
 ![SQLConnection](../assets/images/function-sql-connection.png)
 
-## 2. Connect to the server instance
+## 2. Connect to the server
 
 Open SQL Server Management Studio (SSMS) and connect to the Azure SQL 
 database server **as an admin**. Only admins are able to create new Logins.
 
 ![SSMSConnect](../assets/images/function-ssms-connect.PNG)
 
-## 3. Create a new Login
+## 3. Create a new login
 
 From the SSMS toolbar, select the **master** database. Execute the following 
 command to create a new Login.
@@ -49,7 +49,7 @@ CREATE LOGIN <SomeUser>
 WITH PASSWORD = '<SomePassword>' 
 ```
 
-## 4. Create a new User
+## 4. Create a new user
 
 From the SSMS toolbar, select the database you want to connect to. Execute 
 the following commands to create a new User and add them to the 
@@ -69,8 +69,18 @@ ALTER ROLE db_datawriter ADD MEMBER <SomeUser>;
 
 ## 5. Connect to the database from a Function
 
-Important: When using SQL authentication the credentials must be stored 
-in a Key Vault. 
+When using SQL authentication the credentials must be stored in a Key Vault. 
+A function app can get a connection string from a Key Vault using one of the 
+following app setting 
+[Key Vault reference syntax](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli).
+
+```
+@Microsoft.KeyVault(SecretUri=https://myvault.vault.azure.net/secrets/mysecret/)
+```
+
+```
+@Microsoft.KeyVault(VaultName=myvault;SecretName=mysecret)
+```
 
 ``` csharp
 using System;
