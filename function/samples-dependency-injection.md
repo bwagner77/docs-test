@@ -9,7 +9,7 @@ nav_order: 1
 # Add Dependency Injection
 {: .no_toc }
 
-- TOC
+ TOC
 {:toc}
 
 See the 
