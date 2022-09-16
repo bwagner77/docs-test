@@ -47,12 +47,12 @@ in VS Code (as of 9/14/2022).*
 
     ![Structure](../assets/images/function-structure.png)
 
-    [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json)
-    Lets you configure the Functions host. These settings apply both when 
+    - [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json)
+    lets you configure the Functions host. These settings apply both when 
     running locally and in Azure.
 
-    [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
-    Stores the app settings and connection strings used for local 
+    - [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
+    stores the app settings and connection strings used for local 
     development.
 
 5. Open the function file (BusinessFunction.cs). The **FunctionName** attribute 
