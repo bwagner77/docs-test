@@ -21,7 +21,7 @@ nav_order: 2
 
 ## Instructions
 
-Skip to step 5 if the Login and User already exist.
+*Skip to step 5 if the Login and User already exist.*
 
 ### 1. Get the server connection string
 
