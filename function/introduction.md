@@ -42,8 +42,7 @@ writing "orchestrator functions".
 
 ## Triggers and bindings
 
-Triggers cause a function to run. A trigger defines how a function is invoked
-and a function must have exactly one trigger. Triggers have associated data,
+A trigger defines how a function is invoked. Triggers have associated data,
 which is often provided as the payload of the function.  The following 
 are some common triggers:
 
@@ -58,10 +57,8 @@ are some common triggers:
 
 A binding is a connection to data within a function. Bindings may be connected 
 as input bindings, output bindings, or both. Data from bindings is provided 
-to the function as parameters.
-
-All bindings, except for HTTP and timer triggers, must be explicitly added to 
-the function app project.
+to the function as parameters. All bindings, except for HTTP and timer triggers, 
+must be explicitly added to the function app project.
 
 Additional information for triggers and bindings can be found in the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).

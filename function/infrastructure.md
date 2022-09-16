@@ -8,7 +8,9 @@ nav_order: 2
 # Functions Infrastructure
 {: .no_toc }
 
-**Function Apps** run within an App Service Enviornment (ASE). They provide an 
+**Function Apps** run within an 
+[App Service Enviornment (ASE)](https://docs.microsoft.com/en-us/azure/app-service/environment/overview). 
+They provide an 
 execution context for running the functions and are managed by the 
 DevOps infrastructure team.
 
@@ -29,4 +31,5 @@ A full list of service limits can be found in the
 | Max query string length   | 4096          |
 | Max request URL length    | 8192          |
 
-*Note: Cold start is a non-issue when running within an ASE (dedicated host).*
+*Note: Cold start is not an issue when running within an ASE since the 
+Functions host is always running (dedicated host).*

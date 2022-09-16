@@ -14,7 +14,7 @@ nav_order: 3
 ## Runtimes
 
 The following table lists Azure Functions runtime host versions. The runtime 
-version used by published apps in Azure is dictated by the 
+version used in Azure is dictated by the 
 FUNCTIONS_EXTENSION_VERSION 
 [app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
@@ -23,8 +23,8 @@ FUNCTIONS_EXTENSION_VERSION
 | 4.x       | ~4                  | GA            | Recommended version for all languages. Use this version to run C# functions on .NET 6.0 and .NET 7.0 | 
 | 3.x       | ~3                  | GA            | Supports all languages. Use this version to run C# functions on .NET Core 3.1 and .NET 5.0 | 
 
-TargetFramework and AzureFunctionsVersion are found in the C# project 
-file (.csproj).
+The TargetFramework and AzureFunctionsVersion settings are found in the C# 
+project file (.csproj).
 
 *See the Languages table below for compatibility.*
 
@@ -38,7 +38,7 @@ file (.csproj).
 ## Languages
 
 All functions in a function app must share the same language. The language 
-for a function app is stored in the FUNCTIONS_WORKER_RUNTIME app setting.
+for a function app is stored in the FUNCTIONS_WORKER_RUNTIME setting.
 
 | Language      | 3.x                       | 4.x | 
 | ------------- | ------------------------- | ---------------------------- |
@@ -80,10 +80,9 @@ This mode has deep integration between the host process and functions.
 With the .NET isolated process functions run *out-of-process*. This 
 decouples the code from the runtime, thus eliminating assembly version 
 conflicts between the app and the host process. A .NET isolated function 
-project is basically a .NET console app project that targets a 
-supported .NET runtime. When functions run out-of-process, the .NET 
-project uses a unique set of packages, which implement both core 
-functionality and binding extensions.
+project is basically a .NET console app that targets a supported .NET runtime. 
+When functions run out-of-process, the .NET project uses a unique set of 
+packages, which implement both core functionality and binding extensions.
 
 See the 
 [Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide)

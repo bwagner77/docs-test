@@ -13,7 +13,8 @@ nav_order: 4
 
 ## Environment
 
-Function are developed locally in Visual Studio using Azure Functions Core Tools.
+Functions are developed locally in Visual Studio with 
+[Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local).
 
 - Microsoft Windows
 - Visual Studio or VS Code
@@ -31,13 +32,13 @@ in VS Code (as of 9/14/2022).*
 
     ![CreateNewProject](../assets/images/function-create-new-project.png)
 
-2. Enter a **Project name** using the following naming convention.
+2. Enter a **Project name** using the following naming convention:
 
     DH.{Component/Integration}.AzureFunction
 
     ![ConfigureProject](../assets/images/function-configure-project.png)
 
-3. On the Additional Information screen selected the desired trigger 
+3. On the Additional Information screen, select the desired trigger 
 (defaulted to Http trigger).
 
     ![AdditionalInformation](../assets/images/function-additional-info.png)
