@@ -12,10 +12,6 @@ nav_order: 2
 - TOC
 {:toc}
 
-This tutorial describes how to connect to an Azure SQL database from 
-an Azure Function using **SQL authentication** (username and password). 
-Skip to step 5 if the Login and User already exist.
-
 ## Prerequisites
 
 - Visual Studio or VS Code
@@ -24,6 +20,8 @@ Skip to step 5 if the Login and User already exist.
 - Microsoft.Data.SqlClient
 
 ## Instructions
+
+Skip to step 5 if the Login and User already exist.
 
 ### 1. Get the server connection string
 
