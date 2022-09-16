@@ -25,8 +25,8 @@ Skip to step 5 if the Login and User already exist.
 
 ### 1. Get the server connection string
 
-Database connection strings can be found in the Azure Portal **SQL Database** 
-blade under Settings > Connection Strings
+The database connection strings can be found in the Azure Portal 
+**SQL Database** blade under Settings > Connection Strings
 
 ![SQLConnection](../assets/images/function-sql-connection.png)
 
