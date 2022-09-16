@@ -20,21 +20,23 @@ Skip to step 5 if the Login and User already exist.
 - Azure SQL database
 - Microsoft.Data.SqlClient
 
-## 1. Get the server connection string
+## Instructions
+
+### 1. Get the server connection string
 
 Database connection strings can be found in the Azure Portal **SQL Database** 
 blade under Settings > Connection Strings
 
 ![SQLConnection](../assets/images/function-sql-connection.png)
 
-## 2. Connect to the server
+### 2. Connect to the server
 
 Open SQL Server Management Studio (SSMS) and connect to the Azure SQL 
 database server **as an admin**. Only admins are able to create new Logins.
 
 ![SSMSConnect](../assets/images/function-ssms-connect.PNG)
 
-## 3. Create a new login
+### 3. Create a new login
 
 From the SSMS toolbar, select the **master** database. Execute the following 
 command to create a new Login.
@@ -45,7 +47,7 @@ CREATE LOGIN <SomeUser>
 WITH PASSWORD = '<SomePassword>' 
 ```
 
-## 4. Create a new user
+### 4. Create a new user
 
 From the SSMS toolbar, select the database you want to connect to. Execute 
 the following commands to create a new User and add them to the 
@@ -63,7 +65,7 @@ ALTER ROLE db_datawriter ADD MEMBER <SomeUser>;
 
 ```
 
-## 5. Connect to the database from a Function
+### 5. Connect to the database from a Function
 
 Important: SQL authentication credentials must be stored in a Key Vault. 
 A function app can get the connection string from a Key Vault using one of the 

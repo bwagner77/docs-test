@@ -24,7 +24,9 @@ ASP.NET Core dependency injection patterns.*
 - Microsoft.NET.Sdk.Functions
 - Microsoft.Extensions.DependencyInjection
 
-## 1. Register services
+## Instructions
+
+### 1. Register services
 
 Add a new class named **Startup.cs** to your functions project. Create a 
 method for configuring and adding components to an IFunctionsHostBuilder 
@@ -64,7 +66,7 @@ namespace DH.Integration.AzureFunction
 }
 ```
 
-## 2. Use injected dependencies in the function
+### 2. Use injected dependencies in the function
 
 Constructor injection is used to make dependencies available in a 
 function. Notice both the class and Run method were made **non-static**.
