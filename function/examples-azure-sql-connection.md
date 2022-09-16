@@ -69,8 +69,8 @@ ALTER ROLE db_datawriter ADD MEMBER <SomeUser>;
 
 ## 5. Connect to the database from a Function
 
-When using SQL authentication the credentials must be stored in a Key Vault. 
-A function app can get a connection string from a Key Vault using one of the 
+SQL authentication credentials must be stored in a Key Vault. A function app 
+can get the connection string from a Key Vault using one of the 
 following app setting 
 [Key Vault reference syntax](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli).
 
