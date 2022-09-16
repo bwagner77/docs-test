@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Adding Dependency Injection
-parent: Code Examples
+title: Add Dependency Injection
+parent: Code Samples
 grand_parent: Functions
 nav_order: 1
 ---
 
-# Adding Dependency Injection
+# Add Dependency Injection
 {: .no_toc }
 
 See the 

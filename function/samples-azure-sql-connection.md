@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Connect to Azure SQL
-parent: Code Examples
+parent: Code Samples
 grand_parent: Functions
 nav_order: 2
 ---
@@ -75,7 +75,7 @@ following app setting
 @Microsoft.KeyVault(VaultName=myvault;SecretName=mysecret)
 ```
 
-The following C# code shows how to connect to an Azure SQL database, then 
+The following C# code shows how to connect to an Azure SQL database and
 run a simple query.
 
 ``` csharp
