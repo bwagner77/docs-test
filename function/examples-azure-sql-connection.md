@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Connect to Azure SQL database
+title: Connect to Azure SQL
 parent: Code Examples
 grand_parent: Functions
-nav_order: 1
+nav_order: 2
 ---
 
-# Connect to Azure SQL database using SQL authentication
+# Connect to an Azure SQL database using SQL authentication
 {: .no_toc }
 
 This tutorial describes how to connect to an Azure SQL database from 
@@ -24,7 +24,7 @@ for further information on function dependency injection.
 - Azure SQL database
 - Microsoft.Data.SqlClient
 
-## 1. Get server connection string
+## 1. Get the server connection string
 
 Database connection strings can be found in the Azure Portal **SQL Database** 
 blade under Settings > Connection Strings
@@ -34,14 +34,14 @@ blade under Settings > Connection Strings
 ## 2. Connect to the server instance
 
 Open SQL Server Management Studio (SSMS) and connect to the Azure SQL 
-database server **as an admin**. Only admins will be able to create new Logins.
+database server **as an admin**. Only admins are able to create new Logins.
 
 ![SSMSConnect](../assets/images/function-ssms-connect.PNG)
 
 ## 3. Create a new Login
 
-In the database dropdown select the **master** database. 
-Execute the following command to create a new Login.
+From the SSMS toolbar, select the **master** database. Execute the following 
+command to create a new Login.
 
 ``` sql
 -- Create login
@@ -51,8 +51,8 @@ WITH PASSWORD = '<SomePassword>'
 
 ## 4. Create a new User
 
-In the database dropdown select the database you want to connect to. 
-Execute the following commands to create a new User, then add the user to the 
+From the SSMS toolbar, select the database you want to connect to. Execute 
+the following commands to create a new User and add them to the 
 db_datareader and db_datawriter roles.
 
 ``` sql
@@ -61,7 +61,7 @@ CREATE USER <SomeUser>
 FOR LOGIN <SomeUser>
 WITH DEFAULT_SCHEMA = dbo;
 
--- Add user to role(s) in db 
+-- Add user to role(s)
 ALTER ROLE db_datareader ADD MEMBER <SomeUser>; 
 ALTER ROLE db_datawriter ADD MEMBER <SomeUser>; 
 
@@ -69,10 +69,8 @@ ALTER ROLE db_datawriter ADD MEMBER <SomeUser>;
 
 ## 5. Connect to the database from a Function
 
-<div class='label-blue'>
-    Important: When using SQL authentication the credentials must be stored 
-    in a Key Vault. 
-</div>
+Important: When using SQL authentication the credentials must be stored 
+in a Key Vault. 
 
 ``` csharp
 using System;
