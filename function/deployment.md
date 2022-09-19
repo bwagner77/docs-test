@@ -11,7 +11,7 @@ nav_order: 6
 - TOC
 {:toc}
 
-## Workflows (CI/CD)
+## GitHub Actions and Workflows (CI/CD)
 
 Function deployments are automated in GitHub Enterprise Server (GHES) using 
 CI/CD pipelines with 
