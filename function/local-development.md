@@ -97,42 +97,34 @@ VS Code extension.
 
 ## How to make changes to an existing function app?
 
-### 1. Get path to the repo
+1. Get path to the repo Browse to the function app's repo in GitHub 
+    Enterprise Server (GHES). On the **Code** tab, click the **Code** dropdown 
+    and copy the URL.
 
-Browse to the function app's repo in GitHub Enterprise Server (GHES). On the 
-**Code** tab, click the **Code** dropdown and copy the URL.
+    ![FunctionGitClone](../assets/images/function-git-clone.png)
 
-![FunctionGitClone](../assets/images/function-git-clone.png)
+2. Clone the repo to your local development environment.
 
-### 2. Clone the repo
+    ``` bash
+    git clone https://github.unrpnet.gov/UNNPP/<my-function-app-repo>.git
+    ```
 
-Clone the repo to your local development environment.
+3. Create a new branch based on the function app's **main** branch.
 
-``` bash
-git clone https://github.unrpnet.gov/UNNPP/<my-function-app-repo>.git
-```
+    ``` bash
+    git checkout -b <new feature/bug branch name>
+    ```
 
-### 3. Create a new branch
+4. Make code changes and commit them to your feature/bug branch.
 
-Create a new branch based on the function app's **main** branch.
+    ``` bash
+    git commit -m "<My commit message>"
+    git push
+    ```
 
-``` bash
-git checkout -b <new feature/bug branch name>
-```
-
-### 4. Commit and push changes
-
-Make code changes and commit them to your feature/bug branch.
-
-``` bash
-git commit -m "<My commit message>"
-git push
-```
-
-### 5. Merge changes into main
-
-In GitHub Enterprise Server (GHES), create a new pull request (PR) for merging 
-changes into the **main** branch. 
+5. Create a new pull request (PR) in GitHub Enterprise Server (GHES) to 
+merge the changes into the **main** branch. The pull request will require 
+approval before it can be merged.
 
 ## Developer guides
 

@@ -160,7 +160,7 @@ the pipeline run.
           --collect:"Code Coverage"
 ```
 
-## Best Practices
+## Best practices
 
 - Use test-oriented development practices.
 - Use a shift-left continuous testing approach.
