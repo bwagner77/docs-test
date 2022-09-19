@@ -116,7 +116,7 @@ Run and debug tests in Visual Studio using the
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
-## TODO: Analyze code coverage
+## Analyze code coverage
 
 To effectively guard against bugs, the tests should cover a large proportion 
 of the code. A code coverage of >90% is recommended when possible. To 
