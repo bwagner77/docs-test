@@ -48,7 +48,7 @@ This file will include all non-secret app settings.
 
 ## Secrets
 
-In GitHub, secrets can be found in the repo's **Settings** tab 
+Secrets in GitHub can be found on the repo's **Settings** tab 
 under **Security > Actions**. There are three types of actions secrets:
 
 - Environment secrets
