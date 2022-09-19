@@ -5,50 +5,13 @@ parent: Functions
 nav_order: 5
 ---
 
-# TODO: Functions Testing
+# Functions Testing
 {: .no_toc }
 
 - TOC
 {:toc}
 
-This section provides guidance for developing function unit tests.
-
-## Testing approach
-
-- Automated testing. Integrate testing in GHES continuous integration pipelines (CI).
-- Use test-oriented development practices.
-- Use a shift-left continuous testing approach and protect against regression.
-- Keep unit tests in a separate project from integration tests.
-- Use Arrange, Act, Assert (AAA) pattern.
-- Name unit tests using the following naming convention: UnitOfWork_Scenario_ExpectedBehavior
-- Avoid introducing dependencies into tests by following the 
-[Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle) 
-and using dependency injection.
-- Ensure both positive and negative testing scenarios are developed.
-
-**Positive testing scenarios**: Use valid data to demonstate successful 
-execution. Positive testing reinforces the way components should be used in a 
-production environment.
-
-**Negative testing scenarios**: Use invalid data to demonstrate the recovery 
-of the system during a failed execution. Traditionally, there will be  
-significantly more negative testing scenarios compared to positive testing 
-scenarios.
-
-See the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
-for additional unit testing best practices.
-
-## Terminology: Fake, mock, stub
-
-Fake: Generic term to describe either a stub or a mock object.
-
-Mock: A mock is a fake object that decides whether or not a unit test has 
-passed or failed.
-
-Stub: A stub is a controllable replacement for an existing dependency in the 
-system. By using a stub, you can test the code without dealing with the 
-dependency directly.
+This section provides guidance for developing automated function unit tests. 
 
 ## Characteristics of a good unit test (FIRST)
 
@@ -77,9 +40,22 @@ DH.{Integration}.AzureFunction.Tests
 
 ![xUnitAddProject](../assets/images/function-xunit-configure-project.png)
 
-### 3. TODO: Add unit tests
+### 3. Add function project reference
 
-For the test project, add a reference to the function project. 
+In the test project, add a reference to the function project. Your solution
+structure should look similar to the following.
+
+![TestProjectStructure](../assets/images/function-test-project-structure.png)
+
+### 4. Add unit tests
+
+Add a separate test class for each function. Use the following naming 
+convention for the test case methods (facts and theories):
+UnitOfWork_Scenario_ExpectedBehavior
+
+When writing tests, use the Arrange, Act, Assert (AAA) pattern. Test all 
+non-trivial code paths (happy path and edge cases). Ensure both positive 
+and negative testing scenarios are developed.
 
 ``` csharp
 using AutoFixture;
@@ -112,7 +88,7 @@ namespace DH.Integration.AzureFunction.Tests
         public async Task Run_WhenNameParamIsProvided_ShouldReturnTheName()
         {
             // Arrange
-            string  expectedName = _fixture.Create<string>();
+            string expectedName = _fixture.Create<string>();
             var queryCollection = new QueryCollection(new Dictionary<string, StringValues>()
             {
                 { "name", expectedName }
@@ -132,14 +108,54 @@ namespace DH.Integration.AzureFunction.Tests
     }
 }
 ```
-![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
-Use the Visual Studio test explorer to run the tests.
-https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer
+### 5. Run and debug unit tests
+
+Run and debug tests in Visual Studio using the 
+[Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
+
+![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
 ## TODO: Analyze code coverage
 
-To effectively guard against bugs, tests should cover a large proportion 
-of the code (> 90% if possible).
+To effectively guard against bugs, the tests should cover a large proportion 
+of the code. A code coverage of >90% is recommended when possible. To 
+calculate the code coverage in Visual Studio Enterprise edition, 
+select Test > Analyze Code Coverage for All Tests from the main menu. This 
+will generate a .coverage file.
 
-https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested
+![CodeCoverageMenu](../assets/images/function-codecoverage-menu.png)
+
+Select Test > Code Coverage Results from the main menu to view the analysis
+results.
+
+![CodeCoverageResults](../assets/images/function-codecoverage-results.png)
+
+Additiional information on code code coverage can be found in the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+
+## Best Practices
+
+- Automated testing. Integrate testing in GHES continuous integration pipelines (CI).
+- Use test-oriented development practices.
+- Use a shift-left continuous testing approach and protect against regression.
+- Keep unit tests in a separate project from integration tests.
+- Use Arrange, Act, Assert (AAA) pattern.
+- Name unit tests using the following naming convention: UnitOfWork_Scenario_ExpectedBehavior
+- Avoid introducing dependencies into tests by following the 
+[Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle) 
+and using dependency injection.
+- Ensure both positive and negative testing scenarios are developed.
+
+**Positive testing scenarios**: Use valid data to demonstate successful 
+execution. Positive testing reinforces the way components should be used in a 
+production environment.
+
+**Negative testing scenarios**: Use invalid data to demonstrate the recovery 
+of the system during a failed execution. Traditionally, there will be  
+significantly more negative testing scenarios compared to positive testing 
+scenarios.
+
+See the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+for additional unit testing best practices.
