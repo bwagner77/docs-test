@@ -116,7 +116,7 @@ namespace DH.Integration.AzureFunction.Tests
 
 ### 5. Run and debug unit tests
 
-The tests can be ran and debugged in Visual Studio using the 
+Run and debug tests in Visual Studio using the 
 [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
@@ -125,19 +125,36 @@ The tests can be ran and debugged in Visual Studio using the
 
 To effectively guard against bugs, tests should cover a large proportion 
 of the code. A code coverage of >90% is recommended when possible. To 
-calculate the code coverage in Visual Studio Enterprise edition, 
-select Test > Analyze Code Coverage for All Tests from the main menu. This 
-will generate a .coverage file.
+calculate code coverage in Visual Studio Enterprise edition, select 
+Test > Analyze Code Coverage for All Tests from the main menu. This will 
+generate a .coverage file.
 
 ![CodeCoverageMenu](../assets/images/function-codecoverage-menu.png)
 
-Select Test > Code Coverage Results from the main menu to view the analysis
-results.
+Select Test > Code Coverage Results from the main menu to view the results of 
+coverage analysis.
 
 ![CodeCoverageResults](../assets/images/function-codecoverage-results.png)
 
-Additiional information on code code coverage can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+Additional information on code coverage can be found in the 
+[Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+
+## Continuous Integration (CI)
+
+Integrate automated unit tests in the continuous integration (CI) pipeline. 
+This is done with a reusable workflow in GitHub Enterprise Server (GHES).
+The process will also run code coverage analysis and output the results as 
+an artifact of the pipeline run.
+
+``` yaml
+- name: Test
+        run: dotnet test 
+          --configuration Release 
+          --no-build 
+          --verbosity normal
+          --results-directory TestResults
+          --collect:"Code Coverage"
+```
 
 ## Best Practices
 
