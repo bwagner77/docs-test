@@ -5,7 +5,7 @@ parent: Functions
 nav_order: 6
 ---
 
-# Deployment
+# Functions Automated Deployment
 {: .no_toc }
 
 - TOC
