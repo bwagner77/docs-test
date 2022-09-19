@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Automated Deployment
+title: Deployment
 parent: Functions
 nav_order: 6
 ---
 
-# Functions Testing
+# Deployment
 {: .no_toc }
 
 - TOC

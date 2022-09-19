@@ -108,24 +108,25 @@ the **Code** tab, click the **Code** dropdown and copy the URL.
     git clone https://github.unrpnet.gov/UNNPP/<my-function-app-repo>.git
     ```
 
-3. Create a new branch based on the function app's **main** branch.
+3. Create a new branch that is based on the function app's **main** branch.
 
     ``` bash
     git checkout -b <new feature/bug branch name>
     ```
 
-4. Make code changes and commit them to your feature/bug branch.
+4. Implement the code changes and commit them to your feature/bug branch.
 
     ``` bash
     git commit -m "<My commit message>"
     git push
     ```
 
-5. To merge the changes into **main**, create a new pull request 
-(PR) in GitHub Enterprise Server (GHES). The pull request will need to be  
-approved by a **Data Hub Integrator** before it can be merged. In addition, if 
-the pull request involves any infrastructure changes (Terraform), it will 
-need to be approved by a member of the **DevOps Infrastructure** team.
+5. When ready to merge the code changes into **main**, create a 
+new pull request (PR) in GitHub Enterprise Server (GHES). The pull request 
+will need to be approved by a **Data Hub Integrator** before it can be merged. 
+In addition, if the pull request involves any infrastructure 
+changes (Terraform), it will need to be approved by a member of the 
+**DevOps Infrastructure** team.
 
 ## Developer guides
 
