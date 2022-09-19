@@ -25,7 +25,7 @@ Functions are developed locally in Visual Studio with
 *Note: Some developers have reported issues when trying to run Functions 
 in VS Code (as of 9/14/2022).*
 
-## How to create a new C# Function App in Visual Studio
+## How to create a new C# Function App?
 
 1. Open Visual Studio 2022 and create a new project using the 
 **Azure Functions** template.
@@ -94,6 +94,45 @@ VS Code extension.
     ![FunctionRunCurl](../assets/images/function-run-curl.png)
 
     ![FunctionRunThunderClient](../assets/images/function-run-thunderclient.png)
+
+## How to make changes to an existing function app?
+
+### 1. Get path to the repo
+
+Browse to the function app's repo in GitHub Enterprise Server (GHES). On the 
+**Code** tab, click the **Code** dropdown and copy the URL.
+
+![FunctionGitClone](../assets/images/function-git-clone.png)
+
+### 2. Clone the repo
+
+Clone the repo to your local development environment.
+
+``` bash
+git clone https://github.unrpnet.gov/UNNPP/<my-function-app-repo>.git
+```
+
+### 3. Create a new branch
+
+Create a new branch based on the function app's **main** branch.
+
+``` bash
+git checkout -b <new feature/bug branch name>
+```
+
+### 4. Commit and push changes
+
+Make code changes and commit them to your feature/bug branch.
+
+``` bash
+git commit -m "<My commit message>"
+git push
+```
+
+### 5. Merge changes into main
+
+In GitHub Enterprise Server (GHES), create a new pull request (PR) for merging 
+changes into the **main** branch. 
 
 ## Developer guides
 

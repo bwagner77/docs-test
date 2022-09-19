@@ -2,7 +2,7 @@
 layout: default
 title: Best Practices
 parent: Functions
-nav_order: 7
+nav_order: 8
 ---
 
 # Functions Best Practices

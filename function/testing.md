@@ -12,7 +12,7 @@ nav_order: 5
 {:toc}
 
 This section provides guidance for developing function automated tests 
-using Visual Studio, C#, and 
+using Visual Studio Enterprise, C#, and 
 [xUnit](https://xunit.net/docs/getting-started/netcore/cmdline).
 
 ## Characteristics of a good unit test (FIRST)
@@ -163,10 +163,10 @@ the pipeline run.
 ## Best Practices
 
 - Use test-oriented development practices.
-- Use a shift-left continuous testing approach, and protect against regression.
+- Use a shift-left continuous testing approach.
 - Keep unit tests in a separate project from integration tests.
 - Name unit tests using the following naming convention: UnitOfWork_Scenario_ExpectedBehavior
-- Use the Arrange, Act, Assert (AAA) pattern.
+- Write unit tests using the Arrange, Act, Assert (AAA) pattern.
 - Avoid introducing dependencies into tests by following the 
 [Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle) 
 and using dependency injection.
