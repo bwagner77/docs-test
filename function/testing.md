@@ -11,7 +11,7 @@ nav_order: 5
 - TOC
 {:toc}
 
-This section provides guidance for developing automated function unit tests 
+This section provides guidance for developing function automated tests 
 using C# and 
 [xUnit](https://xunit.net/docs/getting-started/netcore/cmdline).
 
