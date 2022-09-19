@@ -12,7 +12,7 @@ nav_order: 5
 {:toc}
 
 This section provides guidance for developing function automated tests 
-using C# and 
+using Visual Studio, C#, and 
 [xUnit](https://xunit.net/docs/getting-started/netcore/cmdline).
 
 ## Characteristics of a good unit test (FIRST)
@@ -42,9 +42,9 @@ DH.{Integration}.AzureFunction.Tests
 
 ![xUnitAddProject](../assets/images/function-xunit-configure-project.png)
 
-### 3. Add a function project reference
+### 3. Add function project reference
 
-In the test project, add a reference to the function project. Your solution
+In the test project add a reference to the function project. Your solution
 structure should look similar to the following.
 
 ![TestProjectStructure](../assets/images/function-test-project-structure.png)
@@ -52,7 +52,7 @@ structure should look similar to the following.
 ### 4. Add unit tests
 
 Add a separate test class for each function. Use the following naming 
-convention for the test case methods (facts and theories):
+convention for test case methods (facts and theories):
 
 UnitOfWork_Scenario_ExpectedBehavior
 
@@ -119,7 +119,7 @@ namespace DH.Integration.AzureFunction.Tests
 
 ### 5. Run and debug unit tests
 
-Run and debug tests in Visual Studio using the 
+Run and debug the tests in Visual Studio using the 
 [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
@@ -144,10 +144,10 @@ Additional information on code coverage can be found in the
 
 ## Continuous Integration (CI)
 
-Integrate automated unit tests in the continuous integration (CI) pipeline. 
-This is done with a reusable workflow in GitHub Enterprise Server (GHES).
-The process will also run code coverage analysis and output the results as 
-an artifact of the pipeline run.
+Integrate automated unit tests into the continuous integration (CI) pipeline
+with a reusable workflow in GitHub Enterprise Server (GHES). The process will 
+also run code coverage analysis and output the results as an artifact of 
+the pipeline run.
 
 ``` yaml
 - name: Test
@@ -162,7 +162,7 @@ an artifact of the pipeline run.
 ## Best Practices
 
 - Use test-oriented development practices.
-- Use a shift-left continuous testing approach and protect against regression.
+- Use a shift-left continuous testing approach, and protect against regression.
 - Keep unit tests in a separate project from integration tests.
 - Name unit tests using the following naming convention: UnitOfWork_Scenario_ExpectedBehavior
 - Use the Arrange, Act, Assert (AAA) pattern.
