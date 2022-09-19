@@ -124,13 +124,14 @@ Run and debug the tests in Visual Studio using the
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
-## Analyze code coverage
+## Code coverage
 
 To effectively guard against bugs, tests should cover a large proportion 
-of the code. A code coverage of >90% is recommended when possible. To 
-calculate code coverage in Visual Studio Enterprise edition, select 
-Test > Analyze Code Coverage for All Tests from the main menu. This will 
-generate a .coverage file.
+of the code. A code coverage of >90% is recommended (when possible).
+
+In Visual Studio Enterprise select Test > Analyze Code Coverage for All Tests 
+from the main menu to calculate code coverage. This will generate a .coverage 
+file.
 
 ![CodeCoverageMenu](../assets/images/function-codecoverage-menu.png)
 

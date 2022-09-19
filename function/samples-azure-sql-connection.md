@@ -23,7 +23,7 @@ nav_order: 2
 
 *Skip to step 5 if the Login and User already exist.*
 
-### 1. Get the server connection string
+### 1. Get the connection string
 
 The database connection strings can be found in the Azure Portal 
 **SQL Database** blade under Settings > Connection Strings
@@ -66,7 +66,7 @@ ALTER ROLE db_datawriter ADD MEMBER <SomeUser>;
 
 ```
 
-### 5. Connect to the database from a Function
+### 5. Connect to the database from a function
 
 Important: SQL authentication credentials must be stored in a Key Vault. 
 A function app can get the connection string from a Key Vault using one of the 
