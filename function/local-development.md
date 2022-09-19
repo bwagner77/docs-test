@@ -20,7 +20,7 @@ Functions are developed locally in Visual Studio with
 - Visual Studio or VS Code
 - Azurite (storage emulator)
 - Azure Functions Core Tools
-- Thunder Client, VS Code Extension REST client (optional)
+- Thunder Client, VS Code extension REST client (optional)
 
 *Note: Some developers have reported issues when trying to run Functions 
 in VS Code (as of 9/14/2022).*
