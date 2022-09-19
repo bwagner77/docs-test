@@ -31,5 +31,5 @@ A full list of service limits can be found in the
 | Max query string length   | 4096          |
 | Max request URL length    | 8192          |
 
-*Note: Cold start is not an issue when running within an ASE since the 
-Functions host is always running (dedicated host).*
+*Note: Cold start is not an issue since the Functions host is always 
+running in an ASE (dedicated host).*
