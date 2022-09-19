@@ -24,15 +24,15 @@ passed or failed without manual interpretation.
 - **T**imely: Tests should not take a disproportionately long time to write 
 when compared to the code being tested.
 
-## Set up testing project
+## Set up a testing project
 
-### 1. Add xUnit project
+### 1. Add a xUnit project
 
 Open the function solution in Visual Studio and add a new **xUnit Test Project**.
 
 ![xUnitAddProject](../assets/images/function-xunit-add-project.png)
 
-### 2. Configure xUnit project
+### 2. Configure a xUnit project
 
 For the **Project name** use the following naming convention:
 
@@ -40,7 +40,7 @@ DH.{Integration}.AzureFunction.Tests
 
 ![xUnitAddProject](../assets/images/function-xunit-configure-project.png)
 
-### 3. Add function project reference
+### 3. Add a function project reference
 
 In the test project, add a reference to the function project. Your solution
 structure should look similar to the following.
@@ -51,11 +51,16 @@ structure should look similar to the following.
 
 Add a separate test class for each function. Use the following naming 
 convention for the test case methods (facts and theories):
+
 UnitOfWork_Scenario_ExpectedBehavior
 
 When writing tests, use the Arrange, Act, Assert (AAA) pattern. Test all 
 non-trivial code paths (happy path and edge cases). Ensure both positive 
 and negative testing scenarios are developed.
+
+The following example has two test methods for the function. Notice 
+that Moq and AutoFixture packages were added from NuGet to assist with 
+faking data and service dependencies.
 
 ``` csharp
 using AutoFixture;
@@ -111,14 +116,14 @@ namespace DH.Integration.AzureFunction.Tests
 
 ### 5. Run and debug unit tests
 
-Run and debug tests in Visual Studio using the 
+The tests can be ran and debugged in Visual Studio using the 
 [Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
 ## Analyze code coverage
 
-To effectively guard against bugs, the tests should cover a large proportion 
+To effectively guard against bugs, tests should cover a large proportion 
 of the code. A code coverage of >90% is recommended when possible. To 
 calculate the code coverage in Visual Studio Enterprise edition, 
 select Test > Analyze Code Coverage for All Tests from the main menu. This 
