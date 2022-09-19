@@ -43,7 +43,7 @@ in VS Code (as of 9/14/2022).*
 
     ![AdditionalInformation](../assets/images/function-additional-info.png)
 
-4. Your solution's folder structure should look similar to the following.
+4. Your solution folder structure should look similar to the following.
 
     ![Structure](../assets/images/function-structure.png)
 
@@ -97,9 +97,8 @@ VS Code extension.
 
 ## How to make changes to an existing function app?
 
-1. Get path to the repo Browse to the function app's repo in GitHub 
-    Enterprise Server (GHES). On the **Code** tab, click the **Code** dropdown 
-    and copy the URL.
+1. Browse to the function app repo in GitHub Enterprise Server (GHES). On 
+the **Code** tab, click the **Code** dropdown and copy the URL.
 
     ![FunctionGitClone](../assets/images/function-git-clone.png)
 
@@ -122,9 +121,11 @@ VS Code extension.
     git push
     ```
 
-5. Create a new pull request (PR) in GitHub Enterprise Server (GHES) to 
-merge the changes into the **main** branch. The pull request will require 
-approval before it can be merged.
+5. To merge the changes into **main**, create a new pull request 
+(PR) in GitHub Enterprise Server (GHES). The pull request will need to be  
+approved by a **Data Hub Integrator** before it can be merged. In addition, if 
+the pull request involves any infrastructure changes (Terraform), it will 
+need to be approved by a member of the **DevOps Infrastructure** team.
 
 ## Developer guides
 
