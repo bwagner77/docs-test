@@ -28,8 +28,8 @@ be used by workflows within the same repository._
 | --------------------------------- | --------- | ------ |
 | functionapp-build.yaml            | Yes       | A reusable workflow to build and test the function app. | 
 | functionapp-deploy.yaml           | Yes       | A reusable workflow to deploy the functions (code). | 
-| functionapp-deploy-dev.yaml       | No        | Calls the functionapp-deploy workflow, and deploys the app settings and secrets to the Development environment. |
-| functionapp-deploy-promote.yaml   | No        | Calls the functionapp-deploy workflow, and deploys the app settings and secrets to the Test, Pre-Production, and Production environments. An approval is required for each deployment. |
+| functionapp-deploy-dev.yaml       | No        | Calls the functionapp-deploy workflow. Also, deploys the app settings and secrets to the Development environment. |
+| functionapp-deploy-promote.yaml   | No        | Calls the functionapp-deploy workflow. Also, deploys the app settings and secrets to the Test, Pre-Production, and Production environments. An approval is required for each deployment. |
 
 ## App Settings
 
