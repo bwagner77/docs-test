@@ -28,7 +28,7 @@ when compared to the code being tested.
 
 ## Set up a testing project
 
-### 1. Add a xUnit project
+### 1. Add a xUnit Test Project
 
 Open the function solution in Visual Studio and add a new **xUnit Test Project**.
 
