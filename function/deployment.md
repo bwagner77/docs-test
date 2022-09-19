@@ -57,8 +57,8 @@ under **Security > Actions**. There are three types of actions secrets:
 
 If the function app has secrets, each environment will have it's 
 own **secrets.{environment}.json** file. This file will contain an array of 
-_secret objects_, where the **appSettingName** value is the name of the app 
-setting, and the **secretName** value is the name of the secret.
+_secret objects_, where the object's **appSettingName** value is the name 
+of the app setting, and the **secretName** value is the name of the secret.
 
 ``` json
 {
