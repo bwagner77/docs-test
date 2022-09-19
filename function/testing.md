@@ -15,17 +15,6 @@ This section provides guidance for developing function automated tests
 using Visual Studio Enterprise, C#, and 
 [xUnit](https://xunit.net/docs/getting-started/netcore/cmdline).
 
-## Characteristics of a good unit test (FIRST)
-
-- **F**ast: Tests should take very little time to run.
-- **I**solated: Tests should never depend on other test cases. Should be 
-able to run any test, at any time, in any order.
-- **R**epeatable: Tests should produce the same results every run.
-- **S**elf-checking: Tests should be able to automatically detect if it 
-passed or failed without manual interpretation.
-- **T**imely: Tests should not take a disproportionately long time to write 
-when compared to the code being tested.
-
 ## Set up a testing project
 
 ### 1. Add a xUnit Test Project
@@ -129,14 +118,14 @@ Run and debug the tests in Visual Studio using the
 To effectively guard against bugs, tests should cover a large proportion 
 of the code. A code coverage of >90% is recommended (when possible).
 
-In Visual Studio Enterprise select Test > Analyze Code Coverage for All Tests 
-from the main menu to calculate code coverage. This will generate a .coverage 
-file.
+In Visual Studio Enterprise select 
+**Test > Analyze Code Coverage for All Tests** from the main menu to 
+calculate code coverage. This will generate a .coverage file.
 
 ![CodeCoverageMenu](../assets/images/function-codecoverage-menu.png)
 
-Select Test > Code Coverage Results from the main menu to view the results of 
-coverage analysis.
+Select **Test > Code Coverage Results** from the main menu to view the 
+results of coverage analysis.
 
 ![CodeCoverageResults](../assets/images/function-codecoverage-results.png)
 
@@ -159,6 +148,17 @@ the pipeline run.
           --results-directory TestResults
           --collect:"Code Coverage"
 ```
+
+## Characteristics of a good unit test (FIRST)
+
+- **F**ast: Tests should take very little time to run.
+- **I**solated: Tests should never depend on other test cases. Should be 
+able to run any test, at any time, in any order.
+- **R**epeatable: Tests should produce the same results every run.
+- **S**elf-checking: Tests should be able to automatically detect if it 
+passed or failed without manual interpretation.
+- **T**imely: Tests should not take a disproportionately long time to write 
+when compared to the code being tested.
 
 ## Best practices
 
