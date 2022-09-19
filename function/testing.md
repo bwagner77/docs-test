@@ -11,7 +11,9 @@ nav_order: 5
 - TOC
 {:toc}
 
-This section provides guidance for developing automated function unit tests. 
+This section provides guidance for developing automated function unit tests 
+using C# and 
+[xUnit](https://xunit.net/docs/getting-started/netcore/cmdline).
 
 ## Characteristics of a good unit test (FIRST)
 
@@ -54,9 +56,10 @@ convention for the test case methods (facts and theories):
 
 UnitOfWork_Scenario_ExpectedBehavior
 
-When writing tests, use the Arrange, Act, Assert (AAA) pattern. Test all 
-non-trivial code paths (happy path and edge cases). Ensure both positive 
-and negative testing scenarios are developed.
+When writing tests, use the 
+[Arrange, Act, Assert](http://wiki.c2.com/?ArrangeActAssert)
+(AAA) pattern. Test all non-trivial code paths (happy path and edge cases). 
+Ensure both positive and negative testing scenarios are developed.
 
 The following example has two test methods for the function. Notice 
 that Moq and AutoFixture packages were added from NuGet to assist with 
@@ -158,16 +161,16 @@ an artifact of the pipeline run.
 
 ## Best Practices
 
-- Automated testing. Integrate testing in GHES continuous integration pipelines (CI).
 - Use test-oriented development practices.
 - Use a shift-left continuous testing approach and protect against regression.
 - Keep unit tests in a separate project from integration tests.
-- Use Arrange, Act, Assert (AAA) pattern.
 - Name unit tests using the following naming convention: UnitOfWork_Scenario_ExpectedBehavior
+- Use the Arrange, Act, Assert (AAA) pattern.
 - Avoid introducing dependencies into tests by following the 
 [Explicit Dependencies Principle](https://deviq.com/principles/explicit-dependencies-principle) 
 and using dependency injection.
 - Ensure both positive and negative testing scenarios are developed.
+- Integrate testing in the continuous integration pipeline (CI).
 
 **Positive testing scenarios**: Use valid data to demonstate successful 
 execution. Positive testing reinforces the way components should be used in a 
