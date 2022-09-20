@@ -9,7 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 **Function Apps** run within an 
-[App Service Enviornment (ASE)](https://docs.microsoft.com/en-us/azure/app-service/environment/overview). 
+[App Service Environment (ASE)](https://docs.microsoft.com/en-us/azure/app-service/environment/overview). 
 They provide an 
 execution context for running the functions and are managed by the 
 DevOps infrastructure team.

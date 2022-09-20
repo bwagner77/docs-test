@@ -32,7 +32,7 @@ in VS Code (as of 9/14/2022).*
 
     ![CreateNewProject](../assets/images/function-create-new-project.png)
 
-2. Enter a **Project name** using the following naming convention:
+2. Enter the **Project name** using the following naming convention:
 
     DH.{Component/Integration}.AzureFunction
 
@@ -55,8 +55,9 @@ in VS Code (as of 9/14/2022).*
     stores the app settings and connection strings used for local 
     development.
 
-5. Open the function file (BusinessFunction.cs). The **FunctionName** attribute 
-for Run indicates the method is the entry point for the function.
+5. Open the function file (BusinessFunction.cs). The Run method's 
+**FunctionName** attribute indicates the method is the entry point for 
+the function.
 
     ``` csharp
     public static class BusinessFunction

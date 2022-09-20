@@ -11,7 +11,7 @@ nav_order: 6
 - TOC
 {:toc}
 
-## GitHub Actions and Workflows (CI/CD)
+## GitHub Actions (CI/CD)
 
 Function deployments are automated in GitHub Enterprise Server (GHES) using 
 CI/CD pipelines with 
@@ -21,8 +21,9 @@ table. These workflows build, test, and deploy the function app's functions,
 and deploy the secrets and app settings. The Test, Pre-Production, and 
 Production environments require approval to deploy.
 
-_Note: Reusable workflows stored within a private repository can only 
-be used by workflows within the same repository._
+_Note: 
+[Reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) 
+stored within a private repository can only be used by workflows within the same repository._
 
 | Workflow                          | Reusable  | Description |
 | --------------------------------- | --------- | ------ |
