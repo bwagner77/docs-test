@@ -2,7 +2,7 @@
 layout: default
 title: Local Development
 parent: Functions
-nav_order: 4
+nav_order: 5
 ---
 
 # Functions Local Development

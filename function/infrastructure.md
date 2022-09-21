@@ -18,7 +18,7 @@ DevOps infrastructure team.
 for functions allow multiple function invocations to run concurrently on a 
 single compute instance.
 
-![FunctionApp](../assets/images/functionapp.png)
+![FunctionASE](../assets/images/function-ase.png)
 
 ## Service limits
 

@@ -2,7 +2,7 @@
 layout: default
 title: Testing
 parent: Functions
-nav_order: 5
+nav_order: 6
 ---
 
 # Functions Testing

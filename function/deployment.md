@@ -2,7 +2,7 @@
 layout: default
 title: Automated Deployment
 parent: Functions
-nav_order: 6
+nav_order: 7
 ---
 
 # Functions Automated Deployment
