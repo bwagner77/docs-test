@@ -9,7 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 **Function Apps** run within an 
-[App Service Environment (ASE)](https://docs.microsoft.com/en-us/azure/app-service/environment/overview). 
+[App Service Environment (ASE)](https://learn.microsoft.com/en-us/azure/app-service/environment/overview). 
 They provide an 
 execution context for running the functions and are managed by the 
 DevOps infrastructure team.
@@ -23,7 +23,7 @@ single compute instance.
 ## Service limits
 
 A full list of service limits can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale){:target="_blank"}.
+[Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale){:target="_blank"}.
 
 | Default timeout duration  | 30 minutes    |
 | Max instance count        | 100           |

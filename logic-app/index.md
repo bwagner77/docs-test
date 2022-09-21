@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Functions
-nav_order: 3
+title: Logic Apps
+nav_order: 2
 has_children: true
 ---
 

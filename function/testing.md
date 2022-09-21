@@ -17,13 +17,13 @@ using Visual Studio Enterprise, C#, and
 
 ## Set up a testing project
 
-### 1. Add a xUnit Test Project
+### 1. Add a xUnit Test Project to the solution
 
 Open the function solution in Visual Studio and add a new **xUnit Test Project**.
 
 ![xUnitAddProject](../assets/images/function-xunit-add-project.png)
 
-### 2. Configure a xUnit project
+### 2. Configure the project
 
 For the **Project name** use the following naming convention:
 
@@ -31,7 +31,7 @@ DH.{Integration}.AzureFunction.Tests
 
 ![xUnitAddProject](../assets/images/function-xunit-configure-project.png)
 
-### 3. Add function project reference
+### 3. Add a reference to the functions project
 
 In the test project add a reference to the function project. Your solution
 structure should look similar to the following.
@@ -109,7 +109,7 @@ namespace DH.Integration.AzureFunction.Tests
 ### 5. Run and debug unit tests
 
 Run and debug the tests in Visual Studio using the 
-[Test Explorer](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
+[Test Explorer](https://learn.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ![TestExplorerPassing](../assets/images/function-test-explorer-passing.png)
 
@@ -130,7 +130,7 @@ results of coverage analysis.
 ![CodeCoverageResults](../assets/images/function-codecoverage-results.png)
 
 Additional information on code coverage can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+[Microsoft Docs](https://learn.microsoft.com/en-us/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
 
 ## Continuous Integration (CI)
 
@@ -183,5 +183,5 @@ significantly more negative testing scenarios compared to positive testing
 scenarios.
 
 See the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+[Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
 for additional unit testing best practices.

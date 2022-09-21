@@ -14,65 +14,28 @@ nav_order: 2
 
 ## Prerequisites
 
-- Visual Studio or VS Code
-- SQL Server Management Studio (SSMS)
 - Azure SQL database
+- Visual Studio or VS Code
 - Microsoft.Data.SqlClient
 
 ## Instructions
 
-*Skip to step 5 if the Login and User already exist.*
-
 ### 1. Get the connection string
 
 The database connection strings can be found in the Azure Portal 
-**SQL Database** blade under Settings > Connection Strings
+**SQL Database** blade under Settings > Connection Strings, and copy the 
+**ADO.NET (SQL authentication)** connection string.
 
 ![SQLConnection](../assets/images/function-sql-connection.png)
 
-### 2. Connect to the server
+### 2. Connect to the database from a function
 
-Open SQL Server Management Studio (SSMS) and connect to the Azure SQL 
-database server **as an admin**. Only admins are able to create new Logins.
-
-![SSMSConnect](../assets/images/function-ssms-connect.PNG)
-
-### 3. Create a new login
-
-From the SSMS toolbar, select the **master** database. Execute the following 
-command to create a new Login.
-
-``` sql
--- Create login
-CREATE LOGIN <SomeUser> 
-WITH PASSWORD = '<SomePassword>' 
-```
-
-### 4. Create a new user
-
-From the SSMS toolbar, select the database you want to connect to. Execute 
-the following commands to create a new User and add them to the 
-db_datareader and db_datawriter roles.
-
-``` sql
--- Create a user for the login
-CREATE USER <SomeUser>
-FOR LOGIN <SomeUser>
-WITH DEFAULT_SCHEMA = dbo;
-
--- Add user to role(s)
-ALTER ROLE db_datareader ADD MEMBER <SomeUser>; 
-ALTER ROLE db_datawriter ADD MEMBER <SomeUser>; 
-
-```
-
-### 5. Connect to the database from a function
-
-Important: SQL authentication credentials must be stored in a Key Vault. 
-A function app can get the connection string from a Key Vault using one of the 
-following app setting 
-[Key Vault reference syntax](https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references?tabs=azure-cli).
-
+Connect to the Azure SQL database using an Azure AD 
+[Service Principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals).
+The SQL authentication credentials must be stored in a Key Vault. It can be 
+accessed from a function app using an app setting along with the 
+[Key Vault reference syntax](https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references).
+There are two forms of the reference syntax.
 ```
 @Microsoft.KeyVault(SecretUri=https://myvault.vault.azure.net/secrets/mysecret/)
 @Microsoft.KeyVault(VaultName=myvault;SecretName=mysecret)

@@ -16,7 +16,7 @@ nav_order: 3
 The following table lists the latest Azure Functions runtime host versions. 
 The runtime version used in Azure is dictated by the 
 FUNCTIONS_EXTENSION_VERSION 
-[app setting](https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
+[app setting](https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings#functions_worker_runtime).
 
 | Version   | App Setting Value   | Support Level | Description | 
 | --------- | ------------------- | ------------- | ----------- |
@@ -58,7 +58,7 @@ together.
 Starting with version 4.x, the Functions runtime enforces a minimum 
 extension version for all trigger and binding extensions. Additional details 
 can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions)
+[Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cin-process%2Cv4&pivots=programming-language-csharp#minimum-extension-versions)
 
 The extension bundle reference can be found in the **host.json** file.
 
@@ -85,5 +85,5 @@ When functions run out-of-process, the .NET project uses a unique set of
 packages, which implement both core functionality and binding extensions.
 
 See the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide)
+[Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide)
 for additional information.

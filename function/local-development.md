@@ -14,7 +14,7 @@ nav_order: 4
 ## Environment
 
 Functions are developed locally in Visual Studio with 
-[Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local).
+[Azure Functions Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local).
 
 - Microsoft Windows
 - Visual Studio or VS Code
@@ -47,11 +47,11 @@ in VS Code (as of 9/14/2022).*
 
     ![Structure](../assets/images/function-structure.png)
 
-    [host.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json)
+    [host.json](https://learn.microsoft.com/en-us/azure/azure-functions/functions-host-json)
     lets you configure the Functions host. These settings apply both when 
     running locally and in Azure.
 
-    [local.settings.json](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
+    [local.settings.json](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash#local-settings)
     stores the app settings and connection strings used for local 
     development.
 
@@ -131,7 +131,7 @@ changes (Terraform), it will need to be approved by a member of the
 
 ## Developer guides
 
-[Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference?tabs=blob)
-[Quickstart: Create your first C# function in Azure using Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
-[Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
-[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)
+[Microsoft Developer Guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference)
+[Quickstart: Create your first C# function in Azure using Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio?tabs=in-process)
+[Quickstart: Create a C# function in Azure using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?tabs=in-process)
+[Quickstart: Create a JavaScript function in Azure using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node)

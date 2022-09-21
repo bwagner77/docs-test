@@ -13,13 +13,14 @@ nav_order: 6
 
 ## GitHub Actions (CI/CD)
 
-Function deployments are automated in GitHub Enterprise Server (GHES) using 
-CI/CD pipelines with 
-[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions). 
-Each function app repo will contain the YAML workflows list in the following 
-table. These workflows build, test, and deploy the function app's functions, 
-and deploy the secrets and app settings. The Test, Pre-Production, and 
-Production environments require approval to deploy.
+Functions are deployed in GitHub Enterprise Server (GHES) using 
+[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+CI/CD pipelines. 
+Each function app repo should include the YAML workflows listed in the following 
+table. These workflows automate build, test, and deployment of the 
+**functions**, **app settings**, and **secrets**. Deploying to the dev 
+environment does not require approval. However, deploying to test, pre-prod, 
+and prod do require approval.
 
 _Note: 
 [Reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) 
@@ -35,9 +36,9 @@ stored within a private repository can only be used by workflows within the same
 ## App Settings
 
 Each environment will have it's own **appsettings.{environemnt}.json** file. 
-This file will include all non-secret app settings.
-
-[App settings reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings)
+This file includes all non-secret app settings. Additional information on 
+app settings can be found in the 
+[App settings reference](https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings).
 
 ``` json
 {
@@ -49,17 +50,17 @@ This file will include all non-secret app settings.
 
 ## Secrets
 
-Secrets in GitHub can be found on the repo's **Settings** tab 
+A repos ecrets can be found on the GitHub **Settings** tab 
 under **Security > Actions**. There are three types of actions secrets:
 
 - Environment secrets
 - Repository secrets
 - Organization secrets
 
-If the function app has secrets, each environment will have it's 
-own **secrets.{environment}.json** file. This file will contain an array of 
-_secret objects_, where the object's **appSettingName** value is the name 
-of the app setting, and the **secretName** value is the name of the secret.
+When a function app has secrets, each environment will have a 
+**secrets.{environment}.json** file. This file will contain an array of 
+_secret objects_, where the object's **appSettingName** is the name 
+of the app setting, and the **secretName** is the name of the secret.
 
 ``` json
 {

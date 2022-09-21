@@ -11,9 +11,9 @@ nav_order: 1
 - TOC
 {:toc}
 
-## What are Azure Functions?
+## What is an Azure Function?
 
-[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)
+[Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/)
 are a serverless code-first compute service that allow running 
 event-triggered code in a scalable way without managing infrastructure. A 
 function is invoked by a *trigger* and executes a block of code or 
@@ -21,10 +21,14 @@ business logic.
 
 ## Common use cases
 
-Logic Apps (designer-first) and Power Automate are generally the 
-preferred approaches when developing integration and automation services. 
-A comparison of these services can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?toc=%2Fazure%2Fazure-functions%2Fdurable%2Ftoc.json).
+Logic Apps (designer-first) and Power Automate are generally the preferred 
+approaches when developing integration and automation services. 
+Azure Functions is a serverless compute service, whereas Azure Logic Apps 
+is a serverless workflow integration platform. A comparison between 
+functions and Logic Apps can be found in the 
+[Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs).
+
+The following are some common use cases:
 
 - Computing backend calculations
 - File processing
@@ -36,7 +40,7 @@ A comparison of these services can be found in the
 
 ## Durable Functions
 
-[Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp)
+[Durable Functions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp)
 are an extension of Azure Functions that let you define stateful workflows by 
 writing "orchestrator functions".
 
@@ -61,4 +65,4 @@ to the function as parameters. All bindings, except for HTTP and timer triggers,
 must be explicitly added to the function app project.
 
 Additional information for triggers and bindings can be found in the 
-[Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).
+[Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp).
